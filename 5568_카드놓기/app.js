@@ -2,6 +2,8 @@ const fs = require('fs');
 const filepath = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
 const input = fs.readFileSync(filepath).toString().split("\n")
 
+
+
 function solution() {
     const n = input[0]*1
     const k = input[1]*1
