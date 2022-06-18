@@ -1,24 +1,20 @@
+'use strict';
+
 const fs = require('fs');
 const filepath = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
-const input = fs.readFileSync(filepath).toString()
+const input = fs.readFileSync(filepath).toString().split("\n")
 
 function solution() {
-   const n = input *1
-   let a = 1
-   let b = 3
-   let count = 0;
-
-   function hanio(n,a,b){
-    if(n>1){
-        hanio(n-1, a, 6-a-b) 
-    }
-    console.log(`${a} ${b}`);    
-    if(n>1){
-        hanio(n-1, 6-a-b, b)
-    }
-   }
-   if(n <= 20){
-    hanio(n,a,b)
-   }
+    const N = input[0]*1
+    const TIMES = input.slice(1,N+1).map(i=>{
+       let a = i.split(" ")[0]*1
+       let b = i.split(" ")[1]*1
+       return [a,b]; 
+    })
+    TIMES.sort((a,b) => {
+        return a[0] - b[0]
+    })
+    
+    console.log(TIMES)
 }
 solution()
