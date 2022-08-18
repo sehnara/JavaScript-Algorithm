@@ -2,7 +2,6 @@ print "No bugs here..."
 
 void hello() {
 BUGBUG
-ABUBUGGB
 printfBUG("Hello, world!\n");
 }
 
