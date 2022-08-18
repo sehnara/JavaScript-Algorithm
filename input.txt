@@ -1,9 +1,1 @@
-print "No bugs here..."
-
-void hello() {
-BUGBUG
-ABUBUGGB
-printfBUG("Hello, world!\n");
-}
-
-wriBUGBUGtelBUGn("Hello B-U-G");
+EaEbFabG
